@@ -1,0 +1,9 @@
+.feedback_cont {
+    display: flex;
+    justify-content: center;
+}
+
+
+.feedback_btn {
+ margin-right: 10px;
+}
