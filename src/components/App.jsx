@@ -34,8 +34,7 @@ render() {
      options={Object.keys(this.state)}
      onLeaveFeedback={this.handleClick} />
     </Section>
-     
-    { (this.countTotalFeedback()) ? ( 
+     { (this.countTotalFeedback()) ? ( 
      <Section title="Statistics">
      <Statistics
      good = {good}
