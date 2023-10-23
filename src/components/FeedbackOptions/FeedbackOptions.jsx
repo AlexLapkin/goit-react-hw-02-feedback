@@ -2,10 +2,9 @@ import css from './FeedbackOptions.module.css';
 import PropTypes from "prop-types";
 
 const FeedbackOptions = ( {options, onLeaveFeedback}) => {
-    let arrStateKeys = Object.keys(options);
     return (
 <div className={css.feedback_cont}>
-    {arrStateKeys.map(option => (
+    {options.map(option => (
        <button className={css.feedback_btn} 
        key={option}
        name={option}
@@ -16,8 +15,8 @@ const FeedbackOptions = ( {options, onLeaveFeedback}) => {
     )
 }
 
-FeedbackOptions.protoTypes = {
-    options: PropTypes.object, 
+FeedbackOptions.propTypes = {
+    options: PropTypes.array, 
     onLeaveFeedback: PropTypes.func,
 }
 

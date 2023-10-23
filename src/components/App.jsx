@@ -31,7 +31,7 @@ render() {
     <div>
      <Section  title="Please leave feedback">
      <FeedbackOptions
-     options={this.state} 
+     options={Object.keys(this.state)}
      onLeaveFeedback={this.handleClick} />
     </Section>
      
